@@ -1,9 +1,11 @@
 # Ruby on Rails Tutorial sample application
 
-[This](https://glacial-depths-35906.herokuapp.com/) is the sample application for
+This is the sample application for
 [*Ruby on Rails Tutorial:
 Learn Web Development with Rails*](https://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+by [Michael Hartl](http://www.michaelhartl.com/). 
+
+[[LIVE HERE]](https://glacial-depths-35906.herokuapp.com/)
 
 ## License
 

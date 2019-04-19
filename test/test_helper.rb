@@ -20,6 +20,13 @@ class ActiveSupport::TestCase
   def log_in_as(user)
     session[:user_id] = user.id
   end
+
+  # Log out a particular user.
+  def log_out_as(user)
+    forget(user)
+    session.delete(:user_id)
+    user = nil
+  end
 end
 
 class ActionDispatch::IntegrationTest
@@ -29,5 +36,12 @@ class ActionDispatch::IntegrationTest
     post login_path, params: { session: { email: user.email,
                                           password: password,
                                           remember_me: remember_me } }
+  end
+
+  # Log out a particular user.
+  def log_out_as(user)
+    forget(user)
+    session.delete(:user_id)
+    user = nil
   end
 end

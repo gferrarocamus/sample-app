@@ -230,6 +230,13 @@ input {
   margin-left: 0;
 }
 
+#follow_form {
+  .btn {
+    max-width: 130px;
+    margin-top: 10px;
+  }
+}
+
 /* Users index */
 
 .users {
